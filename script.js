@@ -6,10 +6,9 @@ const createArray = () => {
       if (!(getInput === null || getInput === '')) {
           createArray.push(`${getInput[1].toUpperCase()}${getInput.toLowerCase().slice(1)}`);
       } else {
-          break;
+          return createArray.sort((a, b) => a.length-b.length);
       }
   }
-    return createArray.sort((a, b) => a-b);
 }
 
 createArray();
