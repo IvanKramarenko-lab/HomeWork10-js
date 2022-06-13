@@ -4,7 +4,7 @@ const createArray = () => {
       const getInput = prompt('Enter your word');
 
       if (!(getInput === null || getInput === '')) {
-          createArray.push(`${getInput[1].toUpperCase()}${getInput.toLowerCase().slice(1)}`);
+          createArray.push(`${getInput[0].toUpperCase()}${getInput.toLowerCase().slice(1)}`);
       } else {
           return createArray.sort((a, b) => a.length-b.length);
       }
